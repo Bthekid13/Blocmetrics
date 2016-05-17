@@ -32,3 +32,4 @@ source 'https://rubygems.org'
  end
 
  #Additions
+  gem 'devise'
