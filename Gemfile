@@ -33,3 +33,4 @@ source 'https://rubygems.org'
 
  #Additions
   gem 'devise'
+  gem 'annotate'
