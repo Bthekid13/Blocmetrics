@@ -2,10 +2,13 @@
   <div class="jumbotron">
     <h1>Blocmetrics</h1>
     <br/>
-    <p class="Tracking API">
-      <br/>
+    <br/>
     <div class="btn-group">
-      <%= link_to "Sign Up Today!", new_registered_application_path, class: "btn btn-success" %>
+      <% if user_signed_in?%>
+        <%= link_to "Register your application", new_registered_application_path, class: "btn btn-info" %>
+      <% else %>
+        <%= link_to "Join the Club", new_user_registration_path, class: "btn btn-success" %>
+      <% end %>
     </div>
   </div>
 </div>

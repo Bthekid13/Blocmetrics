@@ -1,10 +1,8 @@
 class RegisteredApplicationsController < ApplicationController
 
-  def index
-    @reg_app = RegisteredApplication.all
-  end
 
   def show
+    @user = current_user
     @reg_app = RegisteredApplication.find(params[:id])
   end
 
@@ -47,16 +45,16 @@ class RegisteredApplicationsController < ApplicationController
 
     if @reg_app.destroy
       flash[:notice] = "Application Deleted"
-      redirect_to :index
+      redirect_to request.referrer
     else
       flash[:notice] = "Something went wrong. Please try again."
-      render :show
+      redirect_to request.referrer
     end
   end
 
 private
 
   def app_params
-    params.require(:registered_application).permit(:title)
+    params.require(:registered_application).permit(:name)
   end
 end

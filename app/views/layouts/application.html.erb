@@ -24,7 +24,7 @@
           <li class="dropdown">
             <a data-toggle='dropdown' data-target='#'><%= current_user.first_name %> <b class="caret"> </b> </a>
           <ul class="dropdown-menu">
-            <li><%= link_to 'My Applications', '#' %> </li>
+            <li> <%= link_to 'My Applications', show_path %> </li>
             <li> <%= link_to 'Edit Profile', edit_user_registration_path %> </li>
           </ul>
         </li>
