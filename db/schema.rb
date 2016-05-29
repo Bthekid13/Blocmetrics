@@ -37,7 +37,6 @@ ActiveRecord::Schema.define(version: 20160525002111) do
     t.datetime "updated_at",                              null: false
     t.string   "first_name"
     t.string   "last_name"
-    t.integer  "registered_applications_id"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

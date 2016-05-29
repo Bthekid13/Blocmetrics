@@ -2,7 +2,6 @@ class RegisteredApplicationsController < ApplicationController
 
 
   def show
-    @user = current_user
     @reg_app = RegisteredApplication.find(params[:id])
   end
 
