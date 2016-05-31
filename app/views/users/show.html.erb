@@ -2,5 +2,6 @@
 
 <% @reg_app.each do |f| %>
 <hr/>
-<%= link_to f.name, registered_application_path(@user, @reg_app) %> -> <%= link_to "Cancel App", registered_application_path(@user, @reg_app), method: :delete, class:'btn-sm btn-danger', confirm: {data: "Are you sure you want to unregister this app?"} %>
+<%= link_to f.name, registered_application_path(@user, @reg_app) %>
+-> <%= link_to "Cancel App", registered_application_path(@user, @reg_app), method: :delete, class:'btn-sm btn-danger', confirm: {data: "Are you sure you want to unregister this app?"} %>
 <% end %>
