@@ -24,6 +24,7 @@ standard.save!
 20.times do
   rapp = RegisteredApplication.create!(
   name: Faker::Team.state,
+  url:  Faker::Color.color_name,
   user: users.sample
   )
   rapp.save!
