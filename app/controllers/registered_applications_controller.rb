@@ -55,6 +55,6 @@ class RegisteredApplicationsController < ApplicationController
 private
 
   def app_params
-    params.require(:registered_application).permit(:name)
+    params.require(:registered_application).permit(:name, :url)
   end
 end

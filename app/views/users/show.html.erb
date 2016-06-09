@@ -1,7 +1,10 @@
-<h1> <%=current_user.first_name %>'s Apps </h1>
-
-<% @reg_app.each do |f| %>
-<hr/>
-<%= link_to f.name, registered_application_path(@user, @reg_app) %>
--> <%= link_to "Cancel App", registered_application_path(@user, @reg_app), method: :delete, class:'btn-sm btn-danger', confirm: {data: "Are you sure you want to unregister this app?"} %>
-<% end %>
+<div class="container">
+  <div class="row">
+    <h1> <%=current_user.first_name %>'s Apps </h1>
+    <% @reg_app.each do |app| %>
+    <hr/>
+    <%= link_to app.name, app %>
+    -> <%= link_to "Cancel App", app, method: :delete, class:'btn-sm btn-danger', confirm: {data: "Are you sure you want to unregister this app?"} %>
+    <% end %>
+  </div>
+</div>

@@ -10,9 +10,10 @@ namespace :api, defaults: { format: :json } do
   resources :events, only: [:create]
 end
 
+resources :registered_applications
+
 devise_for :users, :controllers => { registrations: 'registrations' }
 
-resources :registered_applications
 
 
 end
