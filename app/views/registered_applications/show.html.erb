@@ -6,3 +6,13 @@
   <%= name %> <span class="badge"><%= events.count %></span>
 </div>
 <% end %>
+
+<div>
+  <%= pie_chart @reg_app.events.group(:name).count %>
+</div>
+<br/>
+<hr/>
+<div>
+  <p>Events by Day</p>
+  <%= line_chart @reg_app.events.group_by_day(:created_at).count %>
+</div>

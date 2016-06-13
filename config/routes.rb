@@ -4,9 +4,9 @@ root to: "welcome#index"
 
 get 'show' => 'users#show'
 
-match '/events', to: 'events#preflight', via: [:options]
 
 namespace :api, defaults: { format: :json } do
+  match '/events', to: 'events#preflight', via: [:options]
   resources :events, only: [:create]
 end
 
