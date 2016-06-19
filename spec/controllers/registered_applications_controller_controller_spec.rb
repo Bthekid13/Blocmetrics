@@ -1,5 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe RegisteredApplicationsControllerController, type: :controller do
+RSpec.describe RegisteredApplicationsController, type: :controller do
+
 
 end
