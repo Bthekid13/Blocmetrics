@@ -33,7 +33,7 @@ var blocmetrics = {};
 ```
 
 
-2. Add this line of code to your application.html.erb (or whichever file extension you may be using) in your layouts folder:
+2. Add this yield statement after the default yield at the bottom of your views/layouts/application.html.erb file:
 ```ruby
 <%= yield :analytic %>
 ```
