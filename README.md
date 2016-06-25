@@ -7,7 +7,7 @@ Demo: [blocmetrics.com] (https://wil-burke-blocmetrics.herokuapp.com
 
 #Blocmetrics in a nutshell:
 
-  Client-side Javascript snippets (that you plug in) allow you to track events (page visits) on your website.
+  Client-side Javascript snippets (you plug them in) allow you to track events (page visits) on your website.
 
   A Server-side API saves those events to a database––which you can access anytime.
 
