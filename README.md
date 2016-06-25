@@ -1,5 +1,5 @@
 #Blocmetrics
-[![Code Climate](https://codeclimate.com/github/Bthekid13/Blocmetrics/badges/gpa.svg)](https://codeclimate.com/github/Bthekid13/Blocmetrics)
+[![Code Climate](https://codeclimate.com/github/Bthekid13/Blocmetrics/badges/gpa.svg)](https://codeclimate.com/github/Bthekid13/Blocmetrics)[![Build Status](https://travis-ci.org/Bthekid13/Blocmetrics.svg?branch=master)](https://travis-ci.org/Bthekid13/Blocmetrics)
 
 An API that track events on a website.
 
