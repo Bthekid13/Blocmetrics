@@ -24,6 +24,7 @@ source 'https://rubygems.org'
    gem 'shoulda'
    gem 'faker'
    gem 'factory_girl_rails'
+   gem 'sqlite3'
  end
  group :development do
   gem 'web-console', '~> 2.0'
