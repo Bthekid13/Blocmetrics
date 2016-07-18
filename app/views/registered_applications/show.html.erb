@@ -1,9 +1,10 @@
 <h1><%= @reg_app.name %></h1>
-
+<%= link_to "Edit App", edit_registered_application_path(@reg_app), class:'btn-sm btn-warning' %>
 <h1> Events </h2>
 <% @events.each do |name, events| %>
 <div>
   <%= name %> <span class="badge"><%= events.count %></span>
+
 </div>
 <% end %>
 

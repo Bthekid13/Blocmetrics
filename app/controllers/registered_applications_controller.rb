@@ -45,7 +45,7 @@ class RegisteredApplicationsController < ApplicationController
 
     if @reg_app.destroy
       flash[:notice] = "Application Deleted"
-      redirect_to request.referrer
+      redirect_to root_path
     else
       flash[:notice] = "Something went wrong. Please try again."
       redirect_to request.referrer

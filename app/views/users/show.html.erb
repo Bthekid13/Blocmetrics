@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <h1> <%=current_user.first_name %>'s Apps </h1>
+    <h1> <%=current_user.first_name.capitalize %>'s Apps </h1>
     <% @reg_app.each do |app| %>
     <hr/>
     <%= link_to app.name, app %>

@@ -28,5 +28,10 @@ class User < ActiveRecord::Base
 #------Relationships
 has_many :registered_applications
 
+validates :first_name, presence: true, length: {minimum: 2}
+validates :last_name, presence: true, length: {minimum: 3}
+validates :email, presence: true
+
+
 
 end
