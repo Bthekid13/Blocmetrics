@@ -35,6 +35,7 @@ var blocmetrics = {};
 
 
 2. Add this yield statement after the default yield at the bottom of your views/layouts/application.html.erb file:
+
 ```ruby
 <%= yield :analytic %>
 
@@ -42,6 +43,7 @@ var blocmetrics = {};
 
 
 3. Finally, Add this line at the bottom each page that you want to track:
+
 ```javaScript
 <% content_for :analytic do %>
   <script type="text/javascript"> $(document).ready(function(){ blocmetrics.report("Topic Show Visit"); }); </script>

@@ -25,6 +25,7 @@ source 'https://rubygems.org'
    gem 'faker'
    gem 'factory_girl_rails'
    gem 'sqlite3'
+   gem "codeclimate-test-reporter", group: :test, require: nil
  end
  group :development do
   gem 'web-console', '~> 2.0'
